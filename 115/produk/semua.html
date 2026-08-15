@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Semua Produk — Merchandise Resmi Haul ke-115 - Haul Solo | Toko Masjid Riyadh</title>
+<style>
+@font-face{font-family:'Montserrat';src:url(.//115/assets/montserrat.woff2) format('woff2');
+font-weight:100 900;font-display:swap}
+:root{--navy:#064a70;--royal:#00589f;--biru:#3e9ecc;--emas:#d0952b;--emas2:#f5c468;--tinta:#12374f}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#fff;color:var(--tinta);font-family:'Montserrat',Arial,sans-serif;line-height:1.75;font-size:15.5px}
+.band{height:52px;background:url(.//115/assets/pattern.webp) center/auto 165px repeat-x}
+.band.bot{margin-top:52px}
+.wrap{max-width:640px;margin:0 auto;padding:36px 22px 8px;text-align:center}
+.logo{width:min(62vw,250px);height:auto;display:block;margin:4px auto 22px}
+.eyebrow{font-size:11px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:var(--emas)}
+h1{font-size:clamp(25px,6vw,36px);font-weight:800;color:var(--royal);letter-spacing:.01em;
+text-transform:uppercase;margin:10px 0 4px;line-height:1.25}
+.sub{font-size:12.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--emas);margin-bottom:24px}
+.badge{display:inline-block;background:var(--navy);color:var(--emas2);border-radius:999px;
+padding:9px 22px;font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;
+border:1.5px solid var(--emas);margin:2px 0 28px}
+.rule{width:70px;height:2px;margin:34px auto;background:linear-gradient(90deg,var(--biru),var(--emas));border-radius:2px}
+.foto{width:100%;height:auto;border-radius:6px;display:block;margin:0 0 26px}
+p.lead{text-align:left;margin-bottom:26px}
+section{text-align:left;background:#f7fafd;border:1px solid #d8e8f3;border-left:4px solid var(--biru);
+border-radius:6px;padding:24px 22px;margin:0 0 18px}
+section.emas{border-left-color:var(--emas);background:#fdf9f1;border-color:#f0e2c4}
+section .eyebrow{display:block;margin-bottom:8px}
+section h3{font-size:19px;font-weight:800;color:var(--navy);margin-bottom:8px}
+section p{font-size:15px}
+.ph{font-style:italic;opacity:.6}
+a{color:var(--royal)}
+.menu{list-style:none;text-align:left;margin-top:6px}
+.menu li{border:1px solid #d8e8f3;border-radius:6px;margin-bottom:12px;background:#fff;
+box-shadow:0 1px 3px rgba(6,74,112,.07)}
+.menu a{display:block;padding:15px 18px;text-decoration:none;font-size:17px;font-weight:700;color:var(--navy)}
+.menu a small{display:block;font-size:12.5px;font-weight:400;color:var(--tinta);opacity:.75;margin-top:2px}
+.menu a:active{background:#eef5fa}
+.back{display:inline-block;margin-top:6px;font-size:12.5px;font-weight:700;
+letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:var(--royal)}
+footer{margin-top:40px;padding-bottom:6px;font-size:11.5px;color:var(--navy);opacity:.65;line-height:1.6}
+
+#splash[hidden]{display:none!important}
+#splash{position:fixed;inset:0;z-index:99;background:#fff;display:flex;align-items:center;
+justify-content:center;transition:opacity .45s ease}
+#splash video{width:min(100vw,420px);max-height:86vh;object-fit:contain}
+#splash button{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);
+background:none;border:1px solid #064a70;color:#064a70;border-radius:999px;
+padding:8px 22px;font-family:inherit;font-size:12px;font-weight:700;
+letter-spacing:.18em;text-transform:uppercase;cursor:pointer}
+@media (prefers-reduced-motion:no-preference){.logo{animation:in .6s ease-out}
+@keyframes in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}}
+</style>
+</head>
+<body>
+<div id="splash" hidden>
+<video id="sv" muted playsinline preload="none" poster=".//115/assets/poster.webp" aria-label="Animasi logo Haul Solo"></video>
+<button id="skip" type="button">Lewati</button>
+</div>
+<script>
+(function(){
+var s=document.getElementById('splash'),v=document.getElementById('sv');
+function bail(){if(s){var x=s;s=null;x.remove()}}
+if(location.search.indexOf('d=1')>-1)return bail();
+if(matchMedia('(prefers-reduced-motion: reduce)').matches)return bail();
+try{if(sessionStorage.getItem('hs115'))return bail();sessionStorage.setItem('hs115','1');}catch(e){}
+s.hidden=false;document.body.style.overflow='hidden';
+function end(){if(!s)return;var x=s;s=null;x.style.opacity='0';
+document.body.style.overflow='';setTimeout(function(){x.remove()},480)}
+document.getElementById('skip').onclick=end;
+v.onended=end;v.onerror=end;
+var ok=false;v.oncanplay=function(){ok=true;v.play().catch(end)};
+['.//115/assets/intro.mp4','.//115/assets/intro.webm'].forEach(function(u){var so=document.createElement('source');so.src=u;so.type=u.slice(-4)=='webm'?'video/webm':'video/mp4';v.appendChild(so)});v.load();
+setTimeout(function(){if(!ok)end()},2500);
+setTimeout(end,9500);
+})();
+</script>
+<div class="band" role="presentation"></div>
+<div class="wrap">
+<img class="logo" src="/115/assets/logo.webp" alt="Logo Haul Solo - Habib Ali bin Muhammad Alhabsyi" width="640" height="704">
+<p class="eyebrow">Toko Masjid Riyadh &#183; Official Store</p>
+<h1>Merchandise Resmi<br>Haul ke-115</h1>
+<p class="sub">Habib Ali bin Muhammad Alhabsyi &#183; Solo</p>
+<p class="lead">Halaman ini adalah rumah bagi seluruh merchandise resmi Haul ke-115.
+Setiap produk membawa dua desain original yang lahir dari visi Haul tahun ini,
+lengkap dengan kisah dan filosofinya. Pilih produk untuk membaca kisahnya.</p>
+<ul class="menu"><li><a href="kaos.html?d=1">Kaos<small>Kaos katun sablon eksklusif edisi Haul ke-115.</small></a></li>
+<li><a href="totebag.html?d=1">Totebag<small>Tas kanvas serbaguna edisi Haul ke-115.</small></a></li>
+<li><a href="ganci.html?d=1">Gantungan Kunci<small>Gantungan kunci akrilik edisi Haul ke-115.</small></a></li>
+<li><a href="sticker.html?d=1">Sticker<small>Sticker vinyl tahan air edisi Haul ke-115.</small></a></li>
+<li><a href="tumbler.html?d=1">Tumbler<small>Tumbler stainless edisi Haul ke-115.</small></a></li></ul>
+<div class="rule"></div>
+<p style="font-size:14px;opacity:.85">Ragu dengan keaslian produk Anda? Merchandise resmi hanya dijual
+melalui Toko Masjid Riyadh dan kanal resmi yang diumumkan panitia.</p>
+<footer>Toko Masjid Riyadh &#8212; Official Store Masjid Riyadh Solo<br>
+Merchandise resmi Haul ke-115 &#183; dikelola oleh Kheedma</footer>
+</div>
+<div class="band bot" role="presentation"></div>
+</body></html>
